@@ -1,0 +1,12 @@
+{
+    "name": "michaloo/wp-cli-environmentalize",
+    "description": "Makes wp-config to load settings from ENV variables.",
+    "homepage": "https://github.com/michaloo/wp-cli-envrionmentalize",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "files": [ "command.php" ]
+    }
+}
