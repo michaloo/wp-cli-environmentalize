@@ -1,6 +1,7 @@
 # WP-CLI Environmentalize
 
-[WP-CLI](https://wp-cli.org/) package to "environmentalize" Wordpress installation
+[WP-CLI](https://wp-cli.org/) package to "environmentalize" Wordpress installation.
+
 Makes `wp-config.php` to load settings from ENV variables.
 
 ## Installation
