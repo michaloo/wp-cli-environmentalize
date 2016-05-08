@@ -5,3 +5,4 @@ sed -i \
     -e "s/define('DB_HOST',.*/define('DB_HOST', getenv('DB_HOST'));/" \
     -e "s/define('DB_CHARSET',.*/define('DB_CHARSET', getenv('DB_CHARSET'));/" \
     -e "s/define('DB_COLLATE',.*/define('DB_COLLATE', getenv('DB_COLLATE'));/" \
+    -e "s/$table_prefix =.*/$table_prefix = getenv('TABLE_PREFIX');/" \
