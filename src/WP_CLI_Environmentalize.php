@@ -23,6 +23,9 @@ class WP_CLI_Environmentalize extends WP_CLI_Command
             WP_CLI::error( "The 'wp-config.php' file already exists. Remove it to environmentalize this WP." );
         }
 
+        $envFile = file_get_contents(__DIR__ . '/../templates/env.txt');
+        file_put_contents(ABSPATH . '.env', $envFile);
+
         $sedCommand = file_get_contents(__DIR__ . '/../templates/sed.txt');
 
         $assoc_args = [];
